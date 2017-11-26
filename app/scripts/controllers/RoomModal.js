@@ -1,7 +1,10 @@
 (function(){
-  function RoomModal(value,'$uibModal'){
+  function RoomModal(value,$uibModal){
     this.open = function(){
-      $uibModal.open();
+      $uibModal.open({
+        templateUrl: '/templates/roommodal.html',
+        size: 'lg'
+      });
     }
   }
 
