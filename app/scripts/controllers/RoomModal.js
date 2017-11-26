@@ -1,9 +1,11 @@
 (function(){
-  function RoomModal(){
-    Room.add();
+  function RoomModal(value,'$uibModal'){
+    this.open = function(){
+      $uibModal.open();
+    }
   }
 
   angular
     .module('blocChat')
-    .controller('RoomModal',[RoomModal]);
+    .controller('RoomModal',['$uibModal',RoomModal]);
 })();
