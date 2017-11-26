@@ -1,14 +1,18 @@
 (function(){
-  function RoomModal(value,$uibModal){
+  function RoomModal(Room,value,$uibModal){
     this.open = function(){
-      $uibModal.open({
-        templateUrl: '/templates/roommodal.html',
-        size: 'lg'
+      var modalInstance = $uibModal.open({
+        animation: true,
+        templateUrl: '/templates/RoomModal.html',
+        controller: 'RoomModal.js',
+        controllerAs: 'roommodal',
+        size: 'lg',
+        appendTo: body
       });
     }
   }
 
   angular
     .module('blocChat')
-    .controller('RoomModal',['$uibModal',RoomModal]);
+    .controller('RoomModal',['Room','$uibModal',RoomModal]);
 })();

@@ -15,7 +15,7 @@
       .state('roommodal', {
         url: '/',
         controller: 'RoomModal as roommodal',
-        templateUrl: '/templates/roommodal.html'
+        templateUrl: '/templates/RoomModal.html'
       });
   }
 
