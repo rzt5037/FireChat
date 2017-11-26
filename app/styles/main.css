@@ -22,3 +22,11 @@ nav button {
   margin-left:5px;
   top: -8px;
 }
+
+.modal-backdrop {
+  opacity: 0.5;
+}
+
+.modal-window{
+  opacity:1;
+}

@@ -1,6 +1,6 @@
 <nav>
   <h1 class="hero-title">Bloc Chat</h1>
-  <button type="button" class="btn" ng-click="roommodal.open()">New Room</button>
+  <button type="button" class="btn" ng-controller="RoomModalCtrl as roommodal" ng-click="roommodal.open()">New Room</button>
 
   <div>
     <h2  ng-repeat="room in home.roomList">{{room.$value}}</h2>

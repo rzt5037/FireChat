@@ -1,14 +1,14 @@
-<div class="modal-header">
-  <h3 class="modal-title">Would you like to add a room?</h3>
-</div>
+    <div class="modal-header">
+      <h3 class="modal-title">Would you like to add a room?</h3>
+    </div>
 
-<div class="modal-body">
-  <form>
-    <input type="text" name="roomname" placeholder="Room Name">
-  </form>
-</div>
+    <div class="modal-body">
+      <form>
+        <input type="text" name="roomname" placeholder="Room Name">
+      </form>
+    </div>
 
-<div class="modal-footer">
-  <button class="btn btn-danger">Cancel</button>
-  <buttontype="button" class="btn">Submit</button>
-</div>
+    <div class="modal-footer" ng-controller="RoomModalCtrl as roommodal">
+      <button type="button" class="btn btn-success" ng-click="roommodal.ok()">Submit</button>
+      <button class="btn btn-danger" ng-click="roommodal.cancel()">Cancel</button>
+    </div>
