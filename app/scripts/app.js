@@ -11,11 +11,6 @@
         url: '/',
         controller: 'HomeCtrl as home',
         templateUrl: '/templates/home.html'
-      })
-      .state('roommodal', {
-        url: '/',
-        controller: 'RoomModalCtrl as roommodal',
-        templateUrl: '/templates/roommodal.html'
       });
   }
 

@@ -4,11 +4,11 @@
 
     <div class="modal-body">
       <form>
-        <input type="text" name="roomname" placeholder="Room Name">
+        <input type="text" ng-model="modalinstance.roomname" placeholder="Room Name">
       </form>
     </div>
 
-    <div class="modal-footer" ng-controller="RoomModalCtrl as roommodal">
-      <button type="button" class="btn btn-success" ng-click="roommodal.ok()">Submit</button>
-      <button class="btn btn-danger" ng-click="roommodal.cancel()">Cancel</button>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-success" ng-click="modalinstance.ok()">Submit</button>
+      <button class="btn btn-danger" ng-click="modalinstance.cancel()">Cancel</button>
     </div>

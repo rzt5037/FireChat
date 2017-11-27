@@ -3,14 +3,11 @@
     this.open = function(){
       var modalInstance = $uibModal.open({
         animation: false,
-        templateUrl: '/templates/roommodal.html'
+        templateUrl: '/templates/roommodal.html',
+        controller: 'ModalInstance',
+        controllerAs: 'modalinstance'
       });
-    }
-    this.cancel = function(){
-      $modalInstance.dismiss('cancel');
-    }
-    this.ok = function(){
-      modalInstance.close();
+      modalInstance.result.then(function(roomname){Room.add(roomname)},function(){});
     }
   }
 
