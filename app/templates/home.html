@@ -3,6 +3,17 @@
   <button type="button" class="btn" ng-controller="RoomModalCtrl as roommodal" ng-click="roommodal.open()">New Room</button>
 
   <div>
-    <h2  ng-repeat="room in home.roomList">{{room.$value}}</h2>
+    <h2 class="room-click" ng-repeat="room in home.roomList" ng-click="home.roomClick(room); home.messageGet(room.$id)">{{room.$value}}</h2>
   </div>
 </nav>
+
+<main>
+  <div>
+    <h2>Active Room: {{home.activeRoom.$value}}</h2>
+  </div>
+  <section>
+    <table class="table table-striped">
+      <tr ng-repeat="message in home.messageList"><td>{{message.user}}:</td><td>{{message.content}}<td><td>@{{message.sentAt}}</td></tr>
+    </table>
+  </section>
+</main>

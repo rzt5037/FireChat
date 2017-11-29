@@ -9,7 +9,14 @@ nav {
   width: 350px;
   height: 100%;
   background-color: #ddd;
+  border-right: 1px #aaa solid;
+  clear:both;
 }
+
+main{
+  width:800px;
+}
+
 
 nav h1 {
   font-size: 40px;
@@ -23,10 +30,41 @@ nav button {
   top: -8px;
 }
 
+nav div h2{
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+main div{
+  position:fixed;
+  top:0px;
+  left:350px;
+  width:100%;
+}
+
+main section{
+  position:relative;
+  top:70px;
+  left:360px;
+}
+
+main div h2{
+  margin-left: 0px;
+  padding-left: 20px;
+  margin-top: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 2px black solid;
+}
+
 .modal-backdrop {
   opacity: 0.5;
 }
 
 .modal-window{
   opacity:1;
+}
+
+.room-click{
+  cursor: pointer;
 }
