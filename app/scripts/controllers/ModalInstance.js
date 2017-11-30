@@ -4,7 +4,9 @@
       $uibModalInstance.dismiss('cancel');
     }
     this.ok = function(){
-      $uibModalInstance.close(this.roomname);
+      if(this.name){
+        $uibModalInstance.close(this.name);
+      }
     }
   }
 
