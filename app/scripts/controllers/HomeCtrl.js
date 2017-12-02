@@ -8,6 +8,10 @@
       Message.getByRoomId(selection);
       this.messageList = Message.msgList;
     }
+    this.sendMessage = function(currentRoom){
+      Message.send(this.messageTxt,currentRoom);
+      this.messageTxt = "";
+    }
   }
 
   angular

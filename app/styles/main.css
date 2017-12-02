@@ -11,12 +11,32 @@ nav {
   background-color: #ddd;
   border-right: 1px #aaa solid;
   clear:both;
+  z-index: 10000;
 }
 
 main{
-  width:800px;
+  /*width:800px;*/
+  float:right;
+}
+ui-view section{
+  position:fixed;
+  left:350px;
+  bottom:0px;
+  width:100%;
 }
 
+ui-view section form{
+  display:inline;
+}
+
+ui-view section form input{
+  width:600px;
+}
+
+ui-view section button{
+  display:inline;
+  width:100px;
+}
 
 nav h1 {
   font-size: 40px;
@@ -40,12 +60,14 @@ main div{
   top:0px;
   left:350px;
   width:100%;
+  background-color:white;
+  z-index: 1000;
 }
 
 main section{
-  position:relative;
-  top:70px;
-  left:360px;
+  /*position:relative;*/
+  top:60px;
+  min-width:600px;
 }
 
 main div h2{
